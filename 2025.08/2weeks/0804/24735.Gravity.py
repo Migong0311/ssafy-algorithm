@@ -49,7 +49,7 @@ for i in range(N):
             # 그렇다면 개수 1 증가
             high_count += 1
     # i번 상자탑에서의 최대 낙차 = N - (i+1) - high_count
-    drop = N - (i+1) - high_count
+    drop = N - (i + 1) - high_count
 
     # 최대 낙차 비교
     if max_drop < drop:
