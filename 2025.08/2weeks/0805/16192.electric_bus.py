@@ -45,7 +45,8 @@ for t in range(1, T + 1):
     # N = 버스 도착 마지막 번호
     # M = 충전기 개수
     charger_list = list(map(int, input().split()))
-    stop = [0] * N  # 정류장 리스트
+    # 정류장 번호는 0번부터 N번까지 존재하므로 N+1 크기로 생성한다.
+    stop = [0] * (N + 1)  # 정류장 리스트
     # stop[1] == 1 1번엔 없다
     # stop[2] == 2 2번엔 없다
     for i in charger_list:
