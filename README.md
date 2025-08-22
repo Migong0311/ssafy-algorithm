@@ -19,9 +19,9 @@
 
 ## 🛠️ 기술 스택 및 환경
 
-- **언어**: <ins>**Python**</ins>, `Java`, `C++` (문제에 따라 선택)
+- **언어**: <ins>**Python**</ins>
 - **플랫폼**: [SWEA](https://swexpertacademy.com/)
-- **IDE**: IntelliJ / <ins>**PyCharm**</ins> / VSCode
+- **IDE**: <ins>**PyCharm**</ins>
 - **문제 유형**:
   - 구현 / 완전탐색 / 백트래킹
   - DFS / BFS / 그래프 탐색
@@ -37,10 +37,10 @@
 ssafy-algorithm/
 ├── week01/
 │   ├── SWEA\_1210\_Ladder1.py
-│   ├── SWEA\_1208\_Flatten.java
+│   ├── SWEA\_1208\_Flatten.py
 │   └── ...
 ├── week02/
-│   ├── SWEA\_2001\_파리퇴치.cpp
+│   ├── SWEA\_2001\_파리퇴치.py
 │   └── ...
 ├── README.md
 
