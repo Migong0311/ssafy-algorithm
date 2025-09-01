@@ -72,4 +72,5 @@ ssafy-algorithm/
 해당 레포지토리는 SSAFY 수업 및 개인 학습 목적의 공개 저장소입니다.  
 문제 자체에 대한 저작권은 SWEA 플랫폼에 있으며, 해당 문제 설명은 포함하지 않습니다.
 
+##### © 2025 Migong0311 and SWEA. All rights reserved.
 
