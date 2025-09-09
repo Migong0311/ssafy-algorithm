@@ -7,6 +7,7 @@
 > 삼성 SW 역량 테스트 준비를 위한 실습 및 문제 해결 중심의 로직 정리
 
 ## [스파르타 클럽 바로가기](https://github.com/Migong0311/ssafy-algorithm/tree/main/2025.09/Spartan_SWEA)
+### 9월8일 스파르타 과제 push완료했습니다!!
 ---
 
 ## 📌 About This Repository
