@@ -4,7 +4,7 @@
 '''
 import sys
 
-sys.stdin = open('../../../swea_homework/1weeks/0903/test.txt', 'r')
+sys.stdin = open('../../../homework_SWEA/1weeks/0903/test.txt', 'r')
 '''
 N * N 정사각형 단, N은 홀수
 정사각형 마름모 형태로 증가 

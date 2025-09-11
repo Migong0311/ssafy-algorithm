@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin = open('../../../swea_homework/1weeks/0903/test.txt', 'r')
+sys.stdin = open('../../../homework_SWEA/1weeks/0903/test.txt', 'r')
 
 '''
 1288. 새로운 불면증 치료법

@@ -8,7 +8,7 @@
 현재값 유지하면서 -> 비트 달라지면 cnt++ -> 현재값-> 해당 비트로 수정 
 '''
 import sys
-sys.stdin = open('../../../swea_homework/1weeks/0903/test.txt', 'r')
+sys.stdin = open('../../../homework_SWEA/1weeks/0903/test.txt', 'r')
 T = int(input())
 
 for t in range(1, T + 1):
