@@ -1,6 +1,4 @@
-import sys
 
-sys.stdin = open('test.txt', 'r')
 
 '''
 1961. 숫자 배열 회전
