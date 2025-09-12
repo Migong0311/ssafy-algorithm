@@ -16,11 +16,11 @@ for t in range(1, T + 1):
 
     for i in range(N - M + 1):
         for j in range(N - M + 1):
-            # i,j 에서부터 M*M크기의 작은 영역을 만들고
+            # answer,j 에서부터 M*M크기의 작은 영역을 만들고
             # 이 작은 영역 안에 별이 몇개 있나 세어보기
             star = 0
             # 작은 영역의 범위를 인덱스로 지정해서 탐색
-            # i,j ~ i+M-1,j+M-1
+            # answer,j ~ answer+M-1,j+M-1
         # 직은 영역의 행번호 열번호  ni,nj
             for ni in range(i, i + M):
                 for nj in range(j, j + M):

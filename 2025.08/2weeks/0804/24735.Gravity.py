@@ -32,15 +32,15 @@ for i in range(N):
     h = lst[i]
 
     # 낙차를 구하는 식
-    # 가로 칸의 수(N) - i번 상자탑과 왼쩍 벽과의 거리 (i+1)
+    # 가로 칸의 수(N) - i번 상자탑과 왼쩍 벽과의 거리 (answer+1)
     # -i번 상자탑의 높이보다 같거나 큰 오른쪽에 있는 상자탑의 개수(high_count)
-    # i번 상자탑에서의 최대 낙차 = N - (i+1) - high_count
+    # i번 상자탑에서의 최대 낙차 = N - (answer+1) - high_count
 
     # high_count 구하기
     high_count = 0
     # i번 상자탑의 오른쪽에 이쓴 상자탑의 높이를 전부 확인
     # 반복의 시작점과 종료점
-    # i번 상자탑의 오른쪽 => i+1
+    # i번 상자탑의 오른쪽 => answer+1
     # 끝 -> N
     # i번 오른쪽에 있는 상자탑의 번호를 j라고 하자
     for j in range(i + 1, N):
@@ -48,7 +48,7 @@ for i in range(N):
         if lst[j] >= h:
             # 그렇다면 개수 1 증가
             high_count += 1
-    # i번 상자탑에서의 최대 낙차 = N - (i+1) - high_count
+    # i번 상자탑에서의 최대 낙차 = N - (answer+1) - high_count
     drop = N - (i + 1) - high_count
 
     # 최대 낙차 비교

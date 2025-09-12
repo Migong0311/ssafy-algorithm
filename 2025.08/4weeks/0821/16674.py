@@ -22,7 +22,7 @@ sys.stdin = open('input.txt', 'r')
 
 
 def find_start(N):
-    """미로(전역 변수 maze)에서 값이 2인 출발 좌표를 찾아 (i, j)로 반환한다.
+    """미로(전역 변수 maze)에서 값이 2인 출발 좌표를 찾아 (answer, j)로 반환한다.
     M: 미로 한 변의 길이(N)"""
     for i in range(N):               # 모든 행을 돌면서
         for j in range(N):           # 해당 행의 모든 열을 확인
@@ -31,7 +31,7 @@ def find_start(N):
 
 
 def bfs(i, j, N):
-    """시작 좌표 (i, j)에서 BFS로 최단 칸 수를 구해 반환한다.
+    """시작 좌표 (answer, j)에서 BFS로 최단 칸 수를 구해 반환한다.
     - visited에는 '시작으로부터의 거리 + 1'을 기록
       예: 시작칸=1, 시작 인접칸=2, ... 도착칸=k 이면 실제 이동 칸 수는 k-2
     - 경로가 없으면 0 반환

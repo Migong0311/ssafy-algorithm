@@ -27,8 +27,8 @@ for t in range(1, T + 1):  # 1번부터 T번까지 반복
 
     best = -1  # 조건 만족 최댓값 (없으면 -1 유지)
 
-    # 모든 서로 다른 쌍(i < j)에 대해 곱을 계산
-    for i in range(N):  # 첫 번째 인덱스 i
+    # 모든 서로 다른 쌍(answer < j)에 대해 곱을 계산
+    for i in range(N):  # 첫 번째 인덱스 answer
         for j in range(i + 1, N):  # 두 번째 인덱스 j (i보다 큰)
             prod = A[i] * A[j]  # 두 수의 곱
             # 곱이 단조 증가(비내림차순)인지 판정

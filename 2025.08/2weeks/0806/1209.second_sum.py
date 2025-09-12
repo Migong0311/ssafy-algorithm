@@ -54,7 +54,7 @@ for t in range(1, 11):
     # 4. 우상향 대각선 (좌하 -> 우상)
     right_up_diag_sum = 0
     for r in range(100):
-        right_up_diag_sum += arr[r][99 - r] # 반대로 (99,0), (98,1) ... (0,99) 즉 c랑r의 합은 99가 나옴 그래서 c + r = 99 에서 r을 99로 넘겨줘서 N-1-i 라는 식이 나오게됨
+        right_up_diag_sum += arr[r][99 - r] # 반대로 (99,0), (98,1) ... (0,99) 즉 c랑r의 합은 99가 나옴 그래서 c + r = 99 에서 r을 99로 넘겨줘서 N-1-answer 라는 식이 나오게됨
         if right_up_diag_sum > max_v:
             max_v = right_up_diag_sum  # 우상향 대각선의 합이 최대값보다 크면 갱신
 

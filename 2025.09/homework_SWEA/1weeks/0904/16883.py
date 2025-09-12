@@ -4,7 +4,7 @@
 delta = [(0, 1), (1, 0)]
 T = int(input())
 
-# 현재위치 (i,j) (행,열)
+# 현재위치 (answer,j) (행,열)
 # (0,0) -> 우or하 이동 반복 -> (N-1.N-1)
 def solve(i,j,now):
     # 종료

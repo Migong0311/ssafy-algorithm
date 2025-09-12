@@ -22,7 +22,7 @@ def checkSudoku(M):
             row_num[row] = 1
             col_num[col] = 1
 
-            # 3x3 작은 정사각형 검사 (i, j가 3의 배수일 때만 검사 시작)
+            # 3x3 작은 정사각형 검사 (answer, j가 3의 배수일 때만 검사 시작)
             if i % 3 == 0 and j % 3 == 0:
                 square = [0] * 10  # 3x3 내 숫자 사용 여부 체크
                 for r in range(i, i + 3):  # 3행 순회

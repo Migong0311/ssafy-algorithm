@@ -40,9 +40,9 @@ for t in range(1, T + 1):  # 입력 받는 값들을 리스트로 입력받음
 
     # K번째 학생의 총점 위치 찾기
     for i in range(N):  # 총점 기준으로 정렬된 리스트를 앞에서부터 순회
-        # total[i] = (학생번호, 총점) -> 학생번호가 K와 같다면
+        # total[answer] = (학생번호, 총점) -> 학생번호가 K와 같다면
         if result_score[i][0] == K:
-            #  i번째 학생의 순위 구간(i // div)에 해당하는 학점 부여
+            #  i번째 학생의 순위 구간(answer // div)에 해당하는 학점 부여
             result = grade[i // div]
             # 원하는 학생의 학점을 찾았으므로 반복 종료
             break

@@ -24,7 +24,7 @@ for t in range(1, T + 1):
     # 모든 위치에 대해 풍선을 터뜨려보며 최대 꽃가루 개수 계산
     for i in range(N):
         for j in range(M):
-            total = A[i][j]  # 현재 위치(i,j) 의 풍선에서 나오는 꽃가루
+            total = A[i][j]  # 현재 위치(answer,j) 의 풍선에서 나오는 꽃가루
             power = A[i][j]  # 해당 풍선의 파워로 꽃가루 수만큼 상하좌우로 터짐
 
             # 4방향 모두에 대해 반복

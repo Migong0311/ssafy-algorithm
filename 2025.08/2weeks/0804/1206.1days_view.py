@@ -6,15 +6,15 @@
 현재 건물이 양 옆 두 칸씩 총 4개의 건물보다 모두 더 높아야 조망이 확보된다.
 
 
-당신이 한 건물(building[i])에 살고 있다고 가정
+당신이 한 건물(building[answer])에 살고 있다고 가정
 당신은 양쪽 창문을 열고 풍경을 보고 싶음
 
 하지만,
 당신 집 바로 양옆 1칸, 2칸 거리에
-(buildings[i - 1],
-buildings[i - 2],
-buildings[i + 1],
-buildings[i + 2])
+(buildings[answer - 1],
+buildings[answer - 2],
+buildings[answer + 1],
+buildings[answer + 2])
 이웃집들이 존재
 이 이웃집들 중 조금이라도 더 높은 집이 하나라도 있다면, 풍경은 가려짐
 

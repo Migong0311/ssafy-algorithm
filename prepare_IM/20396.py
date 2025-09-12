@@ -5,7 +5,7 @@ sys.stdin = open('input.txt', 'r')
 T = int(input())
 
 for t in range(1, T + 1):
-    N, M = map(int, input().split())  # i : 바뀌는 색 대상 j : i + j번째까지 i번색으로 변경
+    N, M = map(int, input().split())  # answer : 바뀌는 색 대상 j : answer + j번째까지 i번색으로 변경
     arr = list(map(int, input().split()))  # 초기상태 배열
 
     # i번째 색 즉 번호로 j번째 까지 바꿔져애됨

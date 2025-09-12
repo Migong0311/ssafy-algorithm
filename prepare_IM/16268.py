@@ -21,7 +21,7 @@ for t in range(1, T + 1):
 
     # 각 위치에서 풍선을 터뜨렸을 때 날릴 수 있는 꽃가루 수를 계산
     def ball_sum(r, c):
-        total = A[r][c]  # 시작위치 (i,j) 의 꽃가루 수 포함
+        total = A[r][c]  # 시작위치 (answer,j) 의 꽃가루 수 포함
         for dr,dc in plus_dirs:  # 상,하,좌,우 한칸씩
             nr, nc = r + dr, c + dc
             if 0 <= nr < N and 0 <= nc < M:# 격자안에있을때만

@@ -6,8 +6,8 @@ def is_pal_row(board, r, c, N):
     i = 0  # 비교를 진행할 내부 인덱스 i를 0으로 초기화
     # i가 N의 절반에 도달할 때까지 양끝에서 안쪽으로 이동하며 비교
     while i < N // 2:  # 두 포인터 방식으로 N//2번 비교하면 충분
-        left_ch = board[r][c + i]  # 구간의 왼쪽 문자: 행 r, 열 (c+i)
-        right_ch = board[r][c + (N - 1 - i)]  # 구간의 오른쪽 문자: 행 r, 열 (c+N-1-i)
+        left_ch = board[r][c + i]  # 구간의 왼쪽 문자: 행 r, 열 (c+answer)
+        right_ch = board[r][c + (N - 1 - i)]  # 구간의 오른쪽 문자: 행 r, 열 (c+N-1-answer)
         if left_ch != right_ch:  # 한 쌍이라도 다르면
             return 0  # 회문이 아니므로 즉시 0 반환
         i += 1  # 다음 비교를 위해 i를 1 증가
@@ -16,10 +16,10 @@ def is_pal_row(board, r, c, N):
 
 # 세로 구간이 회문인지 판정하는 함수
 def is_pal_col(board, r, c, N):
-    i = 0  # 내부 인덱스 i 초기화
+    i = 0  # 내부 인덱스 answer 초기화
     while i < N // 2:  # 위아래에서 가운데로 수렴하며 비교
-        top_ch = board[r + i][c]  # 구간의 위쪽 문자: 행 (r+i), 열 c
-        bottom_ch = board[r + (N - 1 - i)][c]  # 구간의 아래쪽 문자: 행 (r+N-1-i), 열 c
+        top_ch = board[r + i][c]  # 구간의 위쪽 문자: 행 (r+answer), 열 c
+        bottom_ch = board[r + (N - 1 - i)][c]  # 구간의 아래쪽 문자: 행 (r+N-1-answer), 열 c
         if top_ch != bottom_ch:  # 서로 다르면
             return 0  # 회문 아님
         i += 1  # 다음 비교로 이동

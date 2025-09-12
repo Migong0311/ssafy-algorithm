@@ -9,7 +9,7 @@ for t in range(1, T + 1):
 
     max_fly = 0  # 죽일 수 있는 파리 수의 최대값
 
-    # 시작점 i,j 를 N-m+1만큼 순회 (전체행렬에서 M의 정사각형 행렬만큼 순회)
+    # 시작점 answer,j 를 N-m+1만큼 순회 (전체행렬에서 M의 정사각형 행렬만큼 순회)
     for i in range(N - M + 1):
         for j in range(N - M + 1):
             fly_sum = 0 # 파리들의 합계 초기화

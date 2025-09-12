@@ -19,7 +19,7 @@ def hoare_partition1(left, right):
     j = right  # 젤 끝에
 
     while i <= j:  # 교차가 되면 끝
-        # i는 피벗보다 큰 값을 검색 (작거나 같으면 i += 1)
+        # i는 피벗보다 큰 값을 검색 (작거나 같으면 answer += 1)
         while i <= j and arr[i] <= p:
             i += 1
         # j는 피벗보다 작은 값을 검색 (크거나 같으면 j -= 1)

@@ -12,7 +12,7 @@ for tc in range(1, T + 1):
     # 채워넣을 숫자를 1부터 시작
     number = 1
 
-    # 작은 정사각형의 시작 위치는 (i, j)
+    # 작은 정사각형의 시작 위치는 (answer, j)
     # 정사각형이 N x N 격자를 벗어나지 않게 하기 위해 N - M + 1 만큼만 반복
     for i in range(N - M + 1):  # 행 인덱스
         for j in range(N - M + 1):  # 열 인덱스
