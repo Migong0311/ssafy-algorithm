@@ -76,3 +76,4 @@ for tc in range(1, T + 1):  # 각 테스트 케이스 처리
     print(f"#{tc}", end=" ")
     for r in range(H):
         print(''.join(grid[r]))
+# test
