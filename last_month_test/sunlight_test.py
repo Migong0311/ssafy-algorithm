@@ -52,29 +52,34 @@ for t in range(1, T + 1):
     # ...
     #
     # (아래에 실제 로직을 작성하시면 됩니다)
+T = int(input())
+ 
+for t in range(1, T + 1):
     N, M = map(int, input().split())
+ 
     panel = [list(map(int, input().split())) for _ in range(N)]
     lens = [list(map(int, input().split())) for _ in range(M)]
-
+    # lens 배열 총 합
     lens_sum = 0
+ 
     for i in range(M):
         for j in range(M):
             lens_sum += lens[i][j]
-
+ 
     print(f'#{t}')
-    for r in range(N - M + 1):
-        row_vals = []
-        for c in range(N - M + 1):
+ 
+    for i in range(N - M + 1):
+        for j in range(N - M + 1):
             panel_sum = 0
-
+ 
             for x in range(M):
                 for y in range(M):
-                    panel_sum += panel[r + x][c + y]
-
+                    panel_sum += panel[i + x][j + y]
+ 
             result = panel_sum + lens_sum
-            row_vals.append(str(result))
-
-        print(' '.join(row_vals))
+ 
+            print(result, end=' ')
+        print()
 '''         
 
 #1
