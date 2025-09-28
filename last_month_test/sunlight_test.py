@@ -1,9 +1,7 @@
 import sys
 
 sys.stdin = open('sun.txt', 'r')
-T = int(input())
 
-for t in range(1, T + 1):
 
     # 태양열 에너지 (패널 + 렌즈) (SWEA 스타일)
     # ------------------------------------------------------------
